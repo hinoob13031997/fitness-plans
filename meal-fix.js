@@ -1,0 +1,3 @@
+const finalMealApp=appF;
+appF=function(id,month=0){finalMealApp(id,month);const app=document.querySelector(`#${id} .simple-app`);if(!app)return;app.querySelectorAll('.sa-meal').forEach(row=>{const text=row.textContent;if(id==='alex'&&(/хлеб/i.test(text)||/фасоль/i.test(text)))row.innerHTML='<b>17:30</b>Творог 150 г, банан 120 г, арахис 15 г';if(id==='alex'&&/^21:00.*Макароны/i.test(text))row.innerHTML='<b>21:00</b>Макароны 80 г сух., куриное бедро без кожи 150 г готов., овощи 200 г';if(id==='elena'&&/фасоль/i.test(text))row.innerHTML='<b>21:00</b>Куриное филе 130 г готов., овощи 250 г, гречка 45 г сух.';});};
+appF('alex');appF('elena');

@@ -1,0 +1,1 @@
+@media(min-width:761px){.sa-grid>.sa-card:first-child{grid-column:1;grid-row:2}.sa-grid>.sa-session{grid-column:1 / span 2;grid-row:1}.sa-grid>.sa-card:has(.sa-chart){grid-column:3;grid-row:1}.sa-grid>.sa-card:has(.sa-chart) .sa-chart{height:230px}.sa-grid>.sa-card:nth-child(3){grid-column:2;grid-row:2}}

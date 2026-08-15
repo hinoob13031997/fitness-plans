@@ -1,0 +1,6 @@
+.sa-session .exercise-item{display:flex;gap:8px;align-items:flex-start;cursor:pointer;border-radius:4px;padding:8px 7px}
+.sa-session .exercise-item:hover{background:#202a25}
+.sa-session .exercise-mark{flex:0 0 16px;color:var(--accent);font-weight:900;text-align:center}
+.sa-session .exercise-item.exercise-done{background:#1d3025;color:#bceccc;text-decoration:line-through}
+.sa-session .exercise-item.exercise-done .exercise-mark{color:#68d797}
+#elena .sa-session .exercise-item.exercise-done{background:#302129;color:#f2cfdd}

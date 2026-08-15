@@ -1,0 +1,35 @@
+/* План и диаграмма всегда стоят рядом, включая экран планшета. */
+@media(min-width:620px){
+  .sa-grid>.plan-progress-row{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.42fr) minmax(0,.92fr)!important;
+    gap:10px;
+    width:100%;
+  }
+  .plan-progress-row>.sa-session,.plan-progress-row>.weekly-progress{min-width:0}
+  .plan-progress-row>.weekly-progress{display:block!important}
+}
+@media(max-width:619px){.plan-progress-row{display:grid;gap:8px}}
+
+.journal-list{display:grid;gap:0}
+.journal-row{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:7px 0;border-top:1px solid #303a34;color:#dce6df;font-size:11px}
+.journal-row span{min-width:0}
+.journal-row button,.clear-journal{border:1px solid #617169;background:#202923;color:#eef5ef;border-radius:4px;padding:5px 7px;font-size:10px;font-weight:700;cursor:pointer;white-space:nowrap}
+.journal-row button:hover{border-color:#de7986;background:#553139}
+.clear-journal{margin-top:9px;width:100%;border-color:#a96873;background:#3d252b;color:#ffeef0}
+
+/* Спокойный ягодный акцент Елены: контрастный текст сохраняется на всех кнопках. */
+#elena .simple-app.pink{--accent:#bd5c82}
+#elena .simple-app.pink .sa-session{background:#21171c;border-color:#704555}
+#elena .simple-app.pink .sa-card{background:#23191e;border-color:#654350}
+#elena .simple-app.pink .sa-complete,#elena .simple-app.pink .sa-form button{background:#bd5c82;color:#fff}
+#elena .simple-app.pink .sa-day.train{background:#b85c80!important;color:#fff!important}
+#elena .simple-app.pink .sa-day.attended{background:#62b987!important;color:#102016!important}
+#elena .simple-app.pink .sa-day.missed{background:#7e3f55!important;color:#fff0f4!important}
+
+/* Тот же спокойный акцент остаётся и в верхней карточке плана. */
+#elena .days .today,#elena .days .done{background:#bd5c82!important;color:#fff!important}
+#elena .days i{color:#efb2c7!important}
+
+/* Отключаем устаревший макет, чтобы упражнения не дублировались. */
+#alex > *:not(.simple-app),#elena > *:not(.simple-app){display:none!important}

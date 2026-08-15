@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitpath — персональные планы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="updates.css" />
+  <link rel="stylesheet" href="annual.css" />
+  <link rel="stylesheet" href="interactive.css" />
+  <link rel="stylesheet" href="contrast.css" />
+  <link rel="stylesheet" href="elena-contrast.css" />
+  <link rel="stylesheet" href="dashboard.css" />
+  <link rel="stylesheet" href="soft-theme.css" />
+  <link rel="stylesheet" href="daypicker.css" />
+  <link rel="stylesheet" href="center.css" />
+  <link rel="stylesheet" href="show-workout.css" />
+  <link rel="stylesheet" href="ux.css" />
+  <link rel="stylesheet" href="portions.css" />
+  <link rel="stylesheet" href="calendar-fix.css" />
+  <link rel="stylesheet" href="final-app.css" />
+  <link rel="stylesheet" href="status-tracker.css" />
+  <link rel="stylesheet" href="color-polish.css" />
+  <link rel="stylesheet" href="calendar-visibility.css" />
+  <link rel="stylesheet" href="layout-plan-chart.css" />
+  <link rel="stylesheet" href="chart-placement.css" />
+  <link rel="stylesheet" href="journal-controls.css" />
+  <link rel="stylesheet" href="layout-final.css" />
+  <link rel="stylesheet" href="exercise-tracker.css" />
+  <link rel="stylesheet" href="periodization.css" />
+  <link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+  <div class="ambient one"></div><div class="ambient two"></div>
+  <main class="shell">
+    <nav class="topbar"><a class="brand" href="#">FIT<span>PATH</span><i></i></a><div class="switch" aria-label="Выбрать план"><button class="active" data-person="alex">Александр</button><button data-person="elena">Елена</button></div><button class="period">СТАРТ · 10 АВГУСТА <b>⌄</b></button></nav>
+
+    <section id="alex" class="person active">
+      <header class="hero"><div><p class="eyebrow">ПЕРСОНАЛЬНЫЙ ТРЕК · НЕДЕЛЯ 01</p><h1>Александр,<br><em>прибавляем силу.</em></h1><p class="lede">Цель — набрать 14 кг постепенно: больше качественной еды, базовых упражнений и стабильного восстановления.</p></div><div class="goal-orbit"><span>ЦЕЛЬ</span><strong>70<small> кг</small></strong><b>+14 кг</b></div></header>
+      <section class="stats"><article><span>ТЕКУЩИЙ ВЕС</span><strong>56.0 <small>кг</small></strong><i class="up">↑ 0.4 кг / нед.</i></article><article><span>РОСТ</span><strong>168 <small>см</small></strong><i>ИМТ 19.8</i></article><article><span>КАЛОРИИ</span><strong>2 750 <small>ккал</small></strong><i class="up">профицит +350</i></article><article><span>БЕЛОК</span><strong>120 <small>г</small></strong><i>2.1 г / кг</i></article></section>
+      <section class="tracker" data-plan="alex"><div class="tracker-copy"><span class="kicker">ТРЕКЕР ПРОГРЕССА</span><b>Неделя 1 · 10–16 августа</b><small><strong data-count="alex">0</strong> из 7 дней отмечено</small></div><div class="week-days" aria-label="Отметки по дням"><button data-day="пн">ПН<small>10</small></button><button data-day="вт">ВТ<small>11</small></button><button data-day="ср">СР<small>12</small></button><button data-day="чт">ЧТ<small>13</small></button><button data-day="пт">ПТ<small>14</small></button><button data-day="сб">СБ<small>15</small></button><button data-day="вс">ВС<small>16</small></button></div><div class="week-progress"><span style="--weeks:0"></span><b data-weeks="alex">0 / 8 НЕДЕЛЬ</b></div></section>
+      <section class="grid"><article class="panel weekly"><div class="panel-head"><div><span class="kicker">ТРЕНИРОВКИ</span><h2>План на неделю</h2></div><span class="badge green">3 / 4 ВЫПОЛНЕНО</span></div><div class="days"><div><b>ПН</b><span class="done">СИЛА A</span><i>✓</i></div><div><b>ВТ</b><span>Восстановление</span></div><div><b>СР</b><span class="done">СИЛА B</span><i>✓</i></div><div><b>ЧТ</b><span>Прогулка 30 мин</span></div><div><b>ПТ</b><span class="done">СИЛА A</span><i>✓</i></div><div><b>СБ</b><span class="today">СИЛА B</span><i>→</i></div><div><b>ВС</b><span>Отдых</span></div></div><div class="workout"><div class="workout-title"><span>СЕГОДНЯ · СИЛА B</span><b>45–60 МИН</b></div><ul><li>Румынская тяга <b>3 × 8–10</b></li><li>Жим гантелей лёжа <b>3 × 8–12</b></li><li>Тяга горизонтального блока <b>3 × 10–12</b></li><li>Жим гантелей сидя <b>2 × 10–12</b></li></ul></div></article>
+      <article class="panel nutrition"><div class="panel-head"><div><span class="kicker">ПИТАНИЕ</span><h2>Рацион на день</h2></div><span class="cal">2 750 ккал</span></div><div class="macro"><div style="--p:31"><span>Белки</span><b>120 г</b></div><div style="--p:48"><span>Углеводы</span><b>345 г</b></div><div style="--p:21"><span>Жиры</span><b>85 г</b></div></div><ol class="meals"><li><time>08:00</time><div><b>Овсянка, молоко, банан, орехи</b><span>Завтрак · 690 ккал</span></div></li><li><time>11:30</time><div><b>Творог + ягоды + мёд</b><span>Перекус · 390 ккал</span></div></li><li><time>14:30</time><div><b>Рис, курица, овощи, авокадо</b><span>Обед · 780 ккал</span></div></li><li><time>18:00</time><div><b>Йогурт и цельнозерновой сэндвич</b><span>До тренировки · 350 ккал</span></div></li><li><time>21:00</time><div><b>Паста с лососем и салат</b><span>Ужин · 540 ккал</span></div></li></ol></article></section>
+      <footer class="tip"><b>ФОКУС НЕДЕЛИ</b><span>Добавь к каждому приёму пищи источник белка и не пропускай перекус после тренировки.</span><button>ОТМЕТИТЬ ДЕНЬ ✓</button></footer><p class="glossary"><b>Пояснения:</b> <abbr title="Индекс массы тела">ИМТ</abbr> — индекс массы тела; кг — килограммы; см — сантиметры; г — граммы; ккал — килокалории. Профицит — питание с избытком калорий для набора веса. ПН–ВС — понедельник–воскресенье.</p>
+    </section>
+
+    <section id="elena" class="person">
+      <header class="hero"><div><p class="eyebrow">ПЕРСОНАЛЬНЫЙ ТРЕК · НЕДЕЛЯ 01</p><h1>Елена,<br><em>лёгкая и сильная.</em></h1><p class="lede">Рекомпозиция тела без спешки: плавно снижаем вес и укрепляем мышцы, уважая возможности колена.</p></div><div class="goal-orbit coral"><span>ЦЕЛЬ</span><strong>49<small> кг</small></strong><b>−5 кг</b></div></header>
+      <section class="stats"><article><span>ТЕКУЩИЙ ВЕС</span><strong>54.0 <small>кг</small></strong><i class="down">↓ 0.25 кг / нед.</i></article><article><span>РОСТ</span><strong>157 <small>см</small></strong><i>ИМТ 21.9</i></article><article><span>КАЛОРИИ</span><strong>1 650 <small>ккал</small></strong><i class="down">дефицит −250</i></article><article><span>БЕЛОК</span><strong>100 <small>г</small></strong><i>1.85 г / кг</i></article></section>
+      <section class="tracker elena-tracker" data-plan="elena"><div class="tracker-copy"><span class="kicker">ТРЕКЕР ПРОГРЕССА</span><b>Неделя 1 · 10–16 августа</b><small><strong data-count="elena">0</strong> из 7 дней отмечено</small></div><div class="week-days" aria-label="Отметки по дням"><button data-day="пн">ПН<small>10</small></button><button data-day="вт">ВТ<small>11</small></button><button data-day="ср">СР<small>12</small></button><button data-day="чт">ЧТ<small>13</small></button><button data-day="пт">ПТ<small>14</small></button><button data-day="сб">СБ<small>15</small></button><button data-day="вс">ВС<small>16</small></button></div><div class="week-progress"><span style="--weeks:0"></span><b data-weeks="elena">0 / 8 НЕДЕЛЬ</b></div></section>
+      <section class="grid"><article class="panel weekly"><div class="panel-head"><div><span class="kicker">ТРЕНИРОВКИ</span><h2>План на неделю</h2></div><span class="badge coral-badge">БЕРЕЖНО К КОЛЕНУ</span></div><div class="days"><div><b>ПН</b><span class="done">ВЕРХ + КОР</span><i>✓</i></div><div><b>ВТ</b><span>Велотренажёр 20 мин</span></div><div><b>СР</b><span class="done">НИЗ · ЩАДЯЩЕ</span><i>✓</i></div><div><b>ЧТ</b><span>Мобилити</span></div><div><b>ПТ</b><span class="today">ВЕРХ + КОР</span><i>→</i></div><div><b>СБ</b><span>Плавание / прогулка</span></div><div><b>ВС</b><span>Отдых</span></div></div><div class="workout"><div class="workout-title"><span>СЕГОДНЯ · ВЕРХ + КОР</span><b>35–45 МИН</b></div><ul><li>Тяга вертикального блока <b>3 × 10–12</b></li><li>Жим гантелей лёжа <b>3 × 8–10</b></li><li>Ягодичный мост <b>3 × 12–15</b></li><li>Планка с колен <b>3 × 25 сек</b></li></ul></div></article>
+      <article class="panel nutrition"><div class="panel-head"><div><span class="kicker">ПИТАНИЕ</span><h2>Рацион на день</h2></div><span class="cal">1 650 ккал</span></div><div class="macro elena-macro"><div style="--p:36"><span>Белки</span><b>100 г</b></div><div style="--p:40"><span>Углеводы</span><b>165 г</b></div><div style="--p:24"><span>Жиры</span><b>55 г</b></div></div><ol class="meals"><li><time>08:00</time><div><b>Омлет с овощами и тост</b><span>Завтрак · 360 ккал</span></div></li><li><time>11:30</time><div><b>Греческий йогурт и ягоды</b><span>Перекус · 210 ккал</span></div></li><li><time>14:30</time><div><b>Гречка, индейка, большой салат</b><span>Обед · 510 ккал</span></div></li><li><time>17:30</time><div><b>Яблоко и миндаль</b><span>Перекус · 170 ккал</span></div></li><li><time>20:30</time><div><b>Белая рыба, овощи, киноа</b><span>Ужин · 400 ккал</span></div></li></ol></article></section>
+      <footer class="tip elena-tip"><b>КОЛЕНО — ПРИОРИТЕТ</b><span>Без бега, прыжков, глубоких приседаний и выпадов при боли. Работай в комфортной амплитуде; при усилении боли — остановись и обратись к врачу/физиотерапевту.</span><button>ОТМЕТИТЬ ДЕНЬ ✓</button></footer><p class="glossary"><b>Пояснения:</b> <abbr title="Индекс массы тела">ИМТ</abbr> — индекс массы тела; кг — килограммы; см — сантиметры; г — граммы; ккал — килокалории. Дефицит — питание с небольшим снижением калорий. Мобилити — мягкая тренировка подвижности суставов. ПН–ВС — понедельник–воскресенье.</p>
+    </section>
+  </main><script src="final-app.js"></script><script src="imported-data.js"></script><script src="budget-plan.js"></script><script src="status-tracker.js"></script><script src="diet-replace.js"></script><script src="meal-fix.js"></script><script src="chart-placement.js"></script><script src="journal-controls.js"></script><script src="periodization.js"></script><script src="exercise-guidance.js"></script><script src="person-switcher.js"></script>
+</body></html>
